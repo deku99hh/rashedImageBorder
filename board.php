@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     /* background-color: #1f2335; */
     border: 1px solid #1a3b7100;
     border-radius: 6px;
-    color: #fff;
+    /* color: #fff; */
     box-sizing: border-box;
     font-size: 0.95rem;
     }
@@ -61,10 +61,14 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         outline: none;
     }
 
-    input[type="file"] {
+    /* input[type="file"] {
         margin-bottom: 15px;
-        /* color: #a0aec0; */
         display: block;
+    } */
+
+    .form1 {
+        display: flex;
+        flex-direction: column;
     }
 
     button {
@@ -177,7 +181,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 </head>
 <body>
      <br> <br> <br>
-    <form action="includes/makepost.inc.php" method="POST">
+    <form action="includes/makepost.inc.php" method="POST" class="form1">
 
         <input type="hidden" name="board_short" value="<?php echo $board; ?>">
         <label for="post_title">post_title</label>
@@ -187,7 +191,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         <label for="username">username</label>
         <input type="text" name="username" placeholder="username"> <br>
 
-        <input type="file" id="myfile" name="myfile">
+        <!-- <input type="file" id="myfile" name="myfile"> -->
 
         <button type="submit">submit</button>
 
@@ -274,7 +278,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         <input type="text" name="post_title" placeholder="comment_title" required>
         <input type="text" name="post_text" placeholder="comment_text" required>
         <input type="text" name="username" placeholder="username">
-        <input type="file" name="myfile">
         <button type="submit">submit</button>
         
     </form>

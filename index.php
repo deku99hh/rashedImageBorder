@@ -8,7 +8,7 @@
 <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #0f111a;
+        background-color: #dedede;
         color: #ffffff;
         margin: 0;
         display: flex;
@@ -35,15 +35,16 @@
     }
 
     a {
-        color: #4f46e5;
+        /* color: #4f46e5; */
         text-decoration: none;
         font-weight: 600;
         font-size: 1.1rem;
         padding: 8px 16px;
-        background-color: #1f2335;
+        background-color: #8da1ff;
         border-radius: 8px;
         transition: all 0.3s ease;
         border: 1px solid transparent;
+        margin: 5px;
     }
 
     a:hover {
