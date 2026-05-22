@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $pdo = null;
         $stmt = null;
 
-        header('Location: ../board.php');
+        header("Location: ../board.php?board=$board_short");
 
     }  catch ( PDOException $e ) {
         die( "connection faild " . $e->getMessage() );
