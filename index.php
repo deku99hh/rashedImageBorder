@@ -29,7 +29,7 @@
         max-width: 800px;
         margin-bottom: 50px;
         padding: 20px;
-        background: #161925;
+        /* background: #161925; */
         border-radius: 12px;
         box-shadow: 0 8px 24px rgba(0,0,0,0.3);
     }
@@ -59,7 +59,7 @@
         height: auto;
         display: block;
         margin-top: 20%;
-        filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+        /* filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5)); */
     }
 </style>
 
